@@ -40,11 +40,6 @@ img {
   display: block;
 }
 
-a {
-  cursor: pointer;
-  text-decoration: none;
-}
-
 .list {
   list-style: none;
   text-decoration: none;
@@ -53,7 +48,7 @@ a {
 .conteiner {
   /* max-width: 1200px;
   width: 100%; - спробувати як працює на телефоні */
-  width: 1200px;
+  min-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -183,6 +178,7 @@ a {
 
 /* HERO */
 .hero {
+  display: flex;
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -192,7 +188,8 @@ a {
 
 .hero-title {
   color: var(--primery-white-color);
-
+  width: 696px;
+  margin: 0 auto;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -361,7 +358,7 @@ a {
 
 .adress-link,
 .adress-contact.mail {
-  display: inline-block;
+  display: block;
   margin-bottom: 9px;
 }
 
